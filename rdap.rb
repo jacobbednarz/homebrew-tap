@@ -9,7 +9,12 @@ class Rdap < Formula
   depends_on "go" => :build
 
   def install
+    ENV["GOPATH"] = buildpath
+    ENV["GO111MODULE"] = "off"
+    
+    system "go", "get", "github.com/openrdap/rdap"
     system "go", "build", "-o", "rdap", "cmd/rdap/main.go"
+
     bin.install "rdap"
   end
 
