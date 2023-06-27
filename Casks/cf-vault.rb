@@ -1,8 +1,8 @@
 cask "cf-vault" do
-  version "0.0.13"
-  sha256 "9e8fa7254f1234685dba4077ede099bac31d604df7cc8c20c0e4231383ec8c77"
+  version "0.0.14"
+  sha256 "10cf88b62b0b9bb9a1d902275ac438fd23f4a7bf84ac85280dd877aaad7e60fb"
 
-  url "https://github.com/jacobbednarz/cf-vault/releases/download/0.0.13/cf-vault_0.0.13_darwin_amd64.zip"
+  url "https://github.com/jacobbednarz/cf-vault/releases/download/0.0.14/cf-vault_0.0.14_darwin_amd64.zip"
   appcast "https://github.com/jacobbednarz/cf-vault/releases.atom"
   name "cf-vault"
   homepage "https://github.com/jacobbednarz/cf-vault"
