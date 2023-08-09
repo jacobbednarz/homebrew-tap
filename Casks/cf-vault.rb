@@ -7,7 +7,9 @@ cask "cf-vault" do
          intel: "7a49365d338224c3025fbc5f7efb7e920a09c361558de62ba9d6c3a7580052bb"
 
   url "https://github.com/jacobbednarz/cf-vault/releases/download/#{version}/cf-vault_#{version}_darwin_#{arch}.tar.gz"
-  appcast "https://github.com/jacobbednarz/cf-vault/releases.atom"
+  livecheck do
+    url "https://github.com/jacobbednarz/cf-vault/releases.atom"
+  end
   name "cf-vault"
   homepage "https://github.com/jacobbednarz/cf-vault"
 
