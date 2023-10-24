@@ -2,16 +2,17 @@ cask "cf-vault" do
   arch arm:   "arm64",
        intel: "amd64"
 
-  version "0.0.15"
-  sha256 arm:   "6adadec7de5e0c13b2156ddcf8727724ff845c8c75be218ce1af44ec8129b625",
-         intel: "7a49365d338224c3025fbc5f7efb7e920a09c361558de62ba9d6c3a7580052bb"
+  version "0.0.16"
+  sha256 arm:   "d3b4b5a8dbd514cfb226342fda74e4d59bd3b69505bee1103d5602375e651851",
+         intel: "088b61673eb761baf7b6378b01eecb8f09a0a2bc69f2c2fd23ede13ec0e7072b"
 
   url "https://github.com/jacobbednarz/cf-vault/releases/download/#{version}/cf-vault_#{version}_darwin_#{arch}.tar.gz"
+  name "cf-vault"
+  homepage "https://github.com/jacobbednarz/cf-vault"
+
   livecheck do
     url "https://github.com/jacobbednarz/cf-vault/releases.atom"
   end
-  name "cf-vault"
-  homepage "https://github.com/jacobbednarz/cf-vault"
 
   binary "cf-vault"
 end
