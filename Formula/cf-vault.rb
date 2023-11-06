@@ -4,6 +4,7 @@ class CfVault < Formula
   url "https://github.com/jacobbednarz/cf-vault/archive/refs/tags/0.0.16.tar.gz"
   sha256 "d3cb321ff7a52cbdab972610479479ee7b4e90ac93e447994c715fa3604c5c5b"
   license "MIT"
+  head "https://github.com/jacobbednarz/cf-vault.git", branch: "master"
 
   depends_on "go" => :build
 
